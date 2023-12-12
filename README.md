@@ -14,3 +14,7 @@ See "systemctl status ospd-openvas.service" and "journalctl -xeu ospd-openvas.se
 Job for gvmd.service failed because a timeout was exceeded.
 See "systemctl status gvmd.service" and "journalctl -xeu gvmd.service" for details.
 
+In order to see the status here run this command:
+  > journalctl -xeu ospd-openvas.service -o cat
+
+So likely this is a permission issue and is the result of pulling down the new hashes as root
